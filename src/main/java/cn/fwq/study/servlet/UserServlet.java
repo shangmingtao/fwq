@@ -11,7 +11,7 @@ import java.io.IOException;
  ****** @date        : 2018 02 05 16:06     
  ****** @version     : v1.0.x                      
  *******************************************************/
-public class SelectServlet extends HttpServlet {
+public class UserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
@@ -20,13 +20,6 @@ public class SelectServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
-        System.out.println("111111111111111");
-        try {
-            req.setCharacterEncoding("UTF-8");
-            resp.sendRedirect("/version.jsp");
-            System.out.println("22222222222222222222222222222222");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        System.out.println("查询方法");
     }
 }
